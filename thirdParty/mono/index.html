@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mono - Sequence.js Theme</title>
+  <link href="css/sequence-theme.mono.css" rel="stylesheet" media="all">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sequence" class="seq">
+    <ul class="seq-canvas">
+
+      <li class="seq-step1 seq-valign seq-in">
+        <div class="seq-vcenter">
+        <div  class="seq-img left">
+          <img data-seq src="images/bananas.png" width="325" height="300" srcset="" />
+          </div>
+          <div class="seq-discription right">
+             <h1 data-seq >Bananas</h1>
+			 <h2 data-seq >1</h2>
+			 <h3 data-seq >2</h3>
+          </div>
+        </div>
+      </li>
+
+      <li class="seq-step2 seq-valign">
+        <div class="seq-vcenter">
+        <div  class="seq-img left">
+          <img src="images/coconut.png"  width="325" height="300" srcset="" />
+          </div>
+          <div class="seq-discription right">
+          <h2 data-seq ">Coconut</h2>
+          </div>
+        </div>
+      </li>
+
+      <li class="seq-step3 seq-valign">
+        <div class="seq-vcenter">
+         <div class="seq-img left">
+          <img  src="images/orange.png" width="325" height="300" srcset="" />
+          </div>
+          <div class="seq-discription right" >
+          <h2>Orange</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <fieldset class="seq-nav" aria-label="Slider buttons" aria-controls="sequence">
+
+      <button type="button" class="seq-prev" aria-label="Previous">
+        <img src="images/prev.svg" alt="Previous" />
+      </button>
+
+      <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+        <li class="seq-current">
+          <a href="#step1" rel="step1" title="Go to bananas">
+            <img src="images/tn-bananas@2x.png" alt="Bananas" width="50" height="40" />
+          </a>
+        </li>
+        <li>
+          <a href="#step2" rel="step2" title="Go to coconut">
+            <img src="images/tn-coconut@2x.png" alt="Coconut" width="50" height="40" />
+          </a>
+        </li>
+        <li>
+          <a href="#step3" rel="step3" title="Go to orange">
+            <img src="images/tn-orange@2x.png" alt="Orange" width="50" height="40" />
+          </a>
+        </li>
+      </ul>
+
+      <button type="button" class="seq-next" aria-label="Next">
+        <img src="images/next.svg" alt="Next" />
+      </button>
+
+    </fieldset>
+  </div>
+
+  <script src="scripts/imagesloaded.pkgd.min.js"></script>
+  <script src="scripts/hammer.min.js"></script>
+  <script src="scripts/sequence.js"></script>
+  <script src="scripts/sequence-theme.mono.js"></script>
+</body>
+</html>
